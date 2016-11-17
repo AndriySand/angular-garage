@@ -48,4 +48,7 @@ end
 
 gem 'rails_12factor', group: :production
 gem 'puma'
+gem 'rspec-rails'
+gem 'capybara'
+gem 'factory_girl_rails'
 ruby  '2.0.0'
