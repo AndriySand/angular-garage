@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 3.5.0'
 gem 'omniauth-facebook'
+gem 'figaro'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -51,4 +52,4 @@ gem 'puma'
 gem 'rspec-rails'
 gem 'capybara'
 gem 'factory_girl_rails'
-ruby  '2.0.0'
+ruby  '2.3.1'

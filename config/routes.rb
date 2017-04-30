@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
-  resources :projects
+  devise_for :users, controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
+  resources :users do
+    resources :projects
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   root to: 'projects#index'
