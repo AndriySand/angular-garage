@@ -37,6 +37,10 @@ gem 'figaro'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'faker'
 end
 
 group :development do
@@ -49,7 +53,5 @@ end
 
 gem 'rails_12factor', group: :production
 gem 'puma'
-gem 'rspec-rails'
-gem 'capybara'
-gem 'factory_girl_rails'
+
 ruby  '2.3.1'
