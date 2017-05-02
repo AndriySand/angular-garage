@@ -25,6 +25,7 @@ gem 'devise', '~> 3.5.0'
 gem 'omniauth-facebook'
 gem 'figaro'
 
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -41,6 +42,11 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'faker'
+  gem 'capistrano-passenger'
+  gem 'capistrano-bundler', '~> 1.1.2'
+  gem 'capistrano-rails', '~> 1.1.1'
+  gem 'capistrano-rvm'
+  gem 'capistrano3-puma'
 end
 
 group :development do
