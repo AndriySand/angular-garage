@@ -1,11 +1,11 @@
 class ProjectsController < ApplicationController
   before_action :set_project, only: [:show, :edit, :update, :destroy]
-  before_action :find_user
+  before_action :find_user, except: [:hello, :index]
 
   # GET /projects
   # GET /projects.json
   def index
-    @projects = @user.projects.all
+    @projects = Project.all
   end
 
   # GET /projects/1

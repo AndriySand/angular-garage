@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
+  get 'hello' => "projects#hello"
   resources :users do
     resources :projects
   end
