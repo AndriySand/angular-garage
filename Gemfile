@@ -24,6 +24,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 3.5.0'
 gem 'omniauth-facebook'
 gem 'figaro'
+gem 'bower-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -58,5 +59,4 @@ group :development do
 end
 
 gem 'rails_12factor', group: :production
-gem "rails_serve_static_assets"
 gem 'puma'
